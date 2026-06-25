@@ -1,0 +1,122 @@
+{
+  "academy": {
+    "name": "ISHAAN SHREYAN CRICKET ACADEMY",
+    "shortName": "ISCA",
+    "motto": "KORBO LORBO SHEKHABO RE",
+    "location": "Rupasi Abasan, Rajarhat, Kolkata 700135"
+  },
+
+  "announcements": [],
+
+  "matches": [],
+
+  "tournaments": [],
+
+  "students": [
+
+    {
+      "name": "PRANAY",
+      "batting": "Right Hand Batter",
+      "bowling": "Right Arm Fast Bowler",
+      "matches": 0,
+      "runs": 0,
+      "wickets": 0,
+      "level": 1,
+      "ranking": "TBA",
+      "coachRemarks": "Awaiting",
+      "profilePicture": ""
+    },
+
+    {
+      "name": "AHARSHI GHOSH",
+      "batting": "Right Hand Batter",
+      "bowling": "Right Arm Fast Bowler",
+      "matches": 0,
+      "runs": 0,
+      "wickets": 0,
+      "level": 1,
+      "ranking": "TBA",
+      "coachRemarks": "Awaiting",
+      "profilePicture": ""
+    },
+
+    {
+      "name": "AAYUSHI BAKSI",
+      "batting": "Right and Left Hand Batter",
+      "bowling": "Right Arm Fast Bowler",
+      "matches": 0,
+      "runs": 0,
+      "wickets": 0,
+      "level": 1,
+      "ranking": "TBA",
+      "coachRemarks": "Awaiting",
+      "profilePicture": ""
+    },
+
+    {
+      "name": "SAANVI DEY",
+      "batting": "Right Hand Batter",
+      "bowling": "Right Arm Fast Bowler",
+      "matches": 0,
+      "runs": 0,
+      "wickets": 0,
+      "level": 1,
+      "ranking": "TBA",
+      "coachRemarks": "Awaiting",
+      "profilePicture": ""
+    },
+
+    {
+      "name": "AADVIK DATTA",
+      "batting": "Right Hand Batter",
+      "bowling": "Right Arm Fast Bowler",
+      "matches": 0,
+      "runs": 0,
+      "wickets": 0,
+      "level": 1,
+      "ranking": "TBA",
+      "coachRemarks": "Awaiting",
+      "profilePicture": ""
+    },
+
+    {
+      "name": "AARUSH DUTTA",
+      "batting": "Right Hand Batter",
+      "bowling": "Right Arm Fast Bowler",
+      "matches": 0,
+      "runs": 0,
+      "wickets": 0,
+      "level": 1,
+      "ranking": "TBA",
+      "coachRemarks": "Awaiting",
+      "profilePicture": ""
+    },
+
+    {
+      "name": "KAMALA GHOSH",
+      "batting": "Right Hand Batter",
+      "bowling": "Right Arm Fast Bowler",
+      "matches": 0,
+      "runs": 0,
+      "wickets": 0,
+      "level": 1,
+      "ranking": "TBA",
+      "coachRemarks": "Awaiting",
+      "profilePicture": ""
+    },
+
+    {
+      "name": "SRISTI ADHIKARY",
+      "batting": "Right Hand Batter",
+      "bowling": "Right Arm Fast Bowler",
+      "matches": 0,
+      "runs": 0,
+      "wickets": 0,
+      "level": 1,
+      "ranking": "TBA",
+      "coachRemarks": "Awaiting",
+      "profilePicture": ""
+    }
+
+  ]
+}
