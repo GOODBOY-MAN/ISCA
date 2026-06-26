@@ -90,7 +90,7 @@ html += `${i+1}. ${p.NAME} - ${p.WICKETS} Wickets<br>`;
 html += `</div>`;
 
 html += `<div class="student"><h2>🏅 TOP 5 POTM WINNERS</h2><br>`;
-
+ 
 topPotm.forEach((p,i)=>{
 html += `${i+1}. ${p.NAME} - ${p.POTM} POTM Awards<br>`;
 });
@@ -102,27 +102,28 @@ html += `</div>`;
 }
  
   if(section==="players"){
-    html=`
-<h1>👥 PLAYER UNIVERSE</h1>
 
-<div class="student" onclick="showPlayer('PRANAY')">PRANAY</div>
+html="<h1>👥 PLAYER UNIVERSE</h1>";
 
-<div class="student" onclick="showPlayer('AHARSHI GHOSH')">AHARSHI GHOSH</div>
+if(!db.students || db.students.length===0){
 
-<div class="student" onclick="showPlayer('AAYUSHI BAKSI')">AAYUSHI BAKSI</div>
+html+="No players found.";
 
-<div class="student" onclick="showPlayer('SAANVI DEY')">SAANVI DEY</div>
+}else{
 
-<div class="student" onclick="showPlayer('AADVIK DATTA')">AADVIK DATTA</div>
+db.students.forEach(player=>{
 
-<div class="student" onclick="showPlayer('AARUSH DUTTA')">AARUSH DUTTA</div>
-
-<div class="student" onclick="showPlayer('KAMALA GHOSH')">KAMALA GHOSH</div>
-
-<div class="student" onclick="showPlayer('SRISTI ADHIKARY')">SRISTI ADHIKARY</div>
-
+html+=`
+<div class="student" onclick="showPlayer('${player.NAME}')">
+${player.NAME}
+</div>
 `;
-  }
+
+});
+
+}
+
+}
 
   if(section==="tournaments"){
     html=`
