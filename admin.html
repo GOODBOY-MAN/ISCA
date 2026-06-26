@@ -191,25 +191,17 @@ ADD TOURNAMENT
 
 <script>
 
-let students=[
+let students=[];
 
-"PRANAY",
+fetch("https://script.google.com/macros/s/AKfycbyuTXsYUcXtrBlerCXoQDIgDdX4NTniMRn1rHgiPZG_GiSbH6urWRsdTYUIwfTBgSW2/exec")
+.then(r=>r.json())
+.then(data=>{
 
-"AHARSHI GHOSH",
+students = data.students.map(s=>s.NAME);
 
-"AAYUSHI BAKSI",
+refresh();
 
-"SAANVI DEY",
-
-"AADVIK DATTA",
-
-"AARUSH DUTTA",
-
-"KAMALA GHOSH",
-
-"SRISTI ADHIKARY"
-
-];
+});
 
 function login(){
 
