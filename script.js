@@ -125,27 +125,41 @@ ${player.NAME}
 
 }
 
-  if(section==="tournaments"){
-    html=`
-<h1>🏆 TOURNAMENT HUB</h1>
+ if(section==="tournaments"){
 
-LA LIGA
+html="<h1>🏆 TOURNAMENT HUB</h1><br>";
+
+if(!db.tournaments || db.tournaments.length===0){
+
+html+="No tournaments available.";
+
+}else{
+
+db.tournaments.forEach(tournament=>{
+
+html+=`
+
+<div class="student">
+
+🏆 <b>${tournament.TOURNAMENT}</b>
 
 <br><br>
 
-PL
+📅 Date : ${tournament.DATE}
 
 <br><br>
 
-SMASHER'S FEST
+📌 Status : ${tournament.STATUS}
 
-<br><br>
-
-BBV
+</div>
 
 `;
-  }
 
+});
+
+}
+
+}
   if(section==="coach"){
     html=`
 
