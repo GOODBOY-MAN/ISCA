@@ -145,7 +145,7 @@ html+=`
 
 <br><br>
 
-📅 Date : ${new Date(t.DATE).toLocaleString("en-IN", {
+📅 Date : ${new Date(tournament.DATE).toLocaleString("en-IN", {
   day: "numeric",
   month: "short",
   year: "numeric",
