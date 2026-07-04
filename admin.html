@@ -335,9 +335,40 @@ function deleteStudent(){
 
 let name=document.getElementById("deleteList").value;
 
-students=students.filter(s=>s!==name);
+if(name==="Select Student"){
+  alert("Please select a student.");
+  return;
+}
 
-refresh();
+fetch("https://script.google.com/macros/s/AKfycbyuTXsYUcXtrBlerCXoQDIgDdX4NTniMRn1rHgiPZG_GiSbH6urWRsdTYUIwfTBgSW2/exec",{
+
+method:"POST",
+
+body:JSON.stringify({
+
+action:"deleteStudent",
+
+name:name
+
+})
+
+})
+
+.then(r=>r.json())
+
+.then(data=>{
+
+alert("🗑️ Student Deleted Successfully");
+
+location.reload();
+
+})
+
+.catch(()=>{
+
+alert("❌ Delete Failed");
+
+});
 
 }
 function updateStats(){
